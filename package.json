@@ -21,6 +21,8 @@
     "@electron-forge/plugin-fuses": "^7.6.1",
     "@electron-forge/plugin-vite": "^7.6.1",
     "@electron/fuses": "^1.8.0",
+    "@types/cors": "^2.8.17",
+    "@types/electron-squirrel-startup": "^1.0.2",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -40,6 +42,9 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.6",
+    "@types/express": "^5.0.0",
+    "clipboardy": "^4.0.0",
+    "cors": "^2.8.5",
     "electron-squirrel-startup": "^1.0.1",
     "express": "^4.21.2",
     "postcss": "^8.5.2",
