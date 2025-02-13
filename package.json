@@ -1,13 +1,16 @@
 {
-  "name": "my-app",
-  "productName": "my-app",
+  "name": "clipboard-server",
+  "productName": "clipboard-server",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "An Electron app that runs an Express server, allowing remote text to be copied to the system clipboard via URL parameters.",
   "main": ".vite/build/main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
+    "make-win-x64": "electron-forge make --platform=win32 --arch=x64",
+    "make-mac-x64": "electron-forge make --platform=darwin --arch=x64",
+    "make-mac-arm": "electron-forge make --platform=darwin --arch=arm64",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
