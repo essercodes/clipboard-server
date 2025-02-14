@@ -3,7 +3,7 @@ import path from "node:path";
 import started from "electron-squirrel-startup";
 import express, {Express} from "express";
 import cors from "cors";
-import clipboard from "clipboardy";
+import ncp from "copy-paste";
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (started) {
@@ -76,7 +76,7 @@ expressApp.get("/", (req, res) => {
         </script>
         `);
         console.log(String(copyValue), typeof copyValue);
-        clipboard.writeSync(String(copyValue));
+        ncp.copy(String(copyValue))
         mainWindow.webContents.send('copy-value', String(copyValue));
     } else {
         res.send("No copy parameter provided");
