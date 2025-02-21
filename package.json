@@ -8,9 +8,6 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "make-all": "pnpm run make-win-x64 && pnpm run make-mac-arm",
-    "make-win-x64": "electron-forge make --platform=win32 --arch=x64",
-    "make-mac-arm": "electron-forge make --platform=darwin --arch=arm64",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
@@ -45,6 +42,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@electron-forge/shared-types": "^7.7.0",
     "@tailwindcss/postcss": "^4.0.6",
     "@types/express": "^5.0.0",
     "copy-paste": "^1.5.3",
